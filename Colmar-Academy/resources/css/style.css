@@ -1,0 +1,417 @@
+/* ANY TIPS ARE WELCOME, KIND OF RAN OUT OF TIME DUE TO A SUMMER TRIP :) */
+html{
+  font-size: 16;
+}
+
+body{
+  width: 100%;
+}
+
+h1{
+  font-family: "Droid Sans", sans-serif;
+  font-weight: bold;
+  color: #4A4A4A;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2{
+  font-family: "Droid Sans", sans-serif;
+  font-weight: bold;
+  color: #4A4A4A;
+  font-size: 2rem;
+}
+
+h3{
+  font-family: Arial, sans-serif;
+  color: #4A4A4A;
+  font-size: 1.5rem;
+}
+
+h4{
+  font-family: Arial, sans-serif;
+  color: #8c8c8c;
+  font-size: .85rem;
+  font-weight: 100;
+}
+
+.flex{
+  display: flex;
+}
+
+/* NAV BAR */
+nav{
+  height: 64px;
+  width: 100%;
+  border-bottom: 1px black;
+}
+
+header{
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  margin: 0px 24px;
+}
+
+.logo{
+  height: 32px;
+  align-items: center;
+}
+
+.logo span{
+  font-family: "Roboto", sans-serif;
+  letter-spacing: .05rem;
+}
+
+#colmar{
+  color: #414141;
+  font-weight: 700;
+}
+
+#academy{
+  color: #7A7A7A;
+  font-weight: 300;
+}
+
+.menu .desktop li{
+  margin-right: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#sign-in{
+  margin-right: 0px;
+}
+
+.mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 650px){
+  header.desktop{
+    display: none;
+  }
+
+  header.mobile{
+    display: flex;
+  }
+
+}
+
+/* BANNER */
+.banner{
+  background-color: #D2D2D2;
+  align-items: center;
+}
+
+.banner img{
+  margin: 32px 24px;
+  width: 60%;
+  height: auto;
+}
+
+.banner .content{
+  flex-direction: column;
+  width: 30%;
+}
+
+.banner .content h1{
+  margin-bottom: 1rem;
+}
+
+.banner .content h2{
+  font-family: Verdana;
+  color: #4C4C4C;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.6rem;
+}
+
+.banner .btn{
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: rgba(74, 74, 74, 1);
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans";
+}
+
+@media only screen and (max-width: 650px){
+  .banner{
+    display: block;
+  }
+
+  .banner img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner .content{
+    margin: 2rem 0rem 0rem 1rem;
+    width: auto;
+
+  }
+
+  .banner .content h1{
+    margin-bottom: 0;
+  }
+
+  .banner h2{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner .btn{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+    color: white;
+    background-color: #808080;
+    height: 1.5rem;
+  }
+
+}
+
+/* INFORMATION */
+.information{
+  align-items: center;
+}
+
+.quote-section{
+  flex-direction: column;
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.quote-section img{
+  height: 300px;
+  margin-bottom: 32px;
+}
+
+.quote{
+  margin-top: 24px;
+  margin-bottom: 32px;
+  line-height: 1.4;
+}
+
+.links{
+  width: 40%;
+  border-left: 1px solid gray;
+  margin: 32px 0px;
+}
+
+.link{
+  align-items: center;
+}
+
+.link:nth-child(2n+ 1){
+  background-color: #D2D2D2;
+}
+
+.link img{
+  width: 35%;
+  height: auto;
+  margin: 16px;
+}
+
+.link h4{
+  margin: 8px 0px;
+}
+
+.link .more{
+  font-family: Arial, sans-serif;
+  color: rgba(78, 172, 223, 1);
+  font-size: .85rem;
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 650px){
+  .quote-section{
+    display: none;
+  }
+
+  .links{
+    width: 100%;
+    margin: 1rem 1rem 0rem 1rem;
+    border-left: none;
+  }
+
+  .link{
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .link img{
+    width: 100%;
+    height: 13rem;
+    margin: 0;
+  }
+
+  .link .info{
+    margin-left: 1rem;
+  }
+
+  .link:nth-child(2n+1){
+    background-color: white;
+  }
+}
+
+/* COURSES */
+.course-section{
+  padding-top: 32px;
+  background-color: #D2D2D2;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.courses{
+  flex-flow: row wrap;
+  margin: 0px 56px 32px 56px;
+  justify-content: center;
+}
+
+.course{
+  background-color: white;
+  margin: 32px 16px 0px 16px;
+  width: 28%;
+}
+
+.course img{
+  height: auto;
+  width: 100%;
+}
+
+.course .description{
+  margin: 16px 0px 24px 16px;
+}
+
+.course h4{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin-top: 8px;
+}
+
+.mobile-courses{
+  display: none;
+}
+
+@media only screen and (max-width: 650px){
+  .course-section .desktop{
+    display: none;
+  }
+
+  .course-section{
+    background-color: white;
+    border-top: 0.5px solid lightgray;
+    border-bottom: 0.5px solid lightgray;
+    padding-bottom: 1.5rem;
+  }
+
+  .course-section h2{
+    margin-bottom: 1rem;
+  }
+
+  .mobile-courses{
+    display: block;
+    width: 90%;
+  }
+
+  .mobile-course{
+    background-color: #D2D2D2;
+    padding: 1rem 0 1.5rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+}
+
+/* EXHIBIT */
+.exhibit-section{
+  background-color: white;
+  margin: 2rem 0 2rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.exhibit-section .content{
+  margin-top: 2rem;
+}
+
+.video-section{
+  flex-direction: column;
+  width: 60%;
+  margin-right: 1.5rem;
+}
+
+.video-section video{
+  width: 100%;
+}
+
+.video-section h3{
+  margin-top: 1.5rem;
+}
+
+.video-section .quote{
+  margin-top: 0.5rem;
+}
+
+.options{
+  width: 40%;
+}
+
+.option{
+  padding: 1rem 0 1rem 1rem;
+  align-items: center;
+}
+
+.option:first-child{
+  background-color: #D2D2D2;
+}
+
+.option img{
+  height: auto;
+  width: 35%;
+}
+
+.option .info{
+  width: 65%;
+  margin-left: 1rem;
+}
+
+.option .info h3{
+  margin-bottom: 0.5rem;
+}
+
+.exhibit-section .mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 650px){
+  .exhibit-section .desktop{
+    display: none;
+  }
+
+  .exhibit-section .mobile{
+    display: block;
+  }
+
+  .exhibit-section .mobile video{
+    width: 90%;
+  }
+}
+
+/* FOOTER */
+footer{
+  height: 4rem;
+  border-top: 1px solid lightgray;
+}
+
+.copy{
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
